@@ -1,0 +1,20 @@
+{
+  "name": "test4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mocha_test.js",
+  "dependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "selenium-webdriver": "^3.5.0",
+    "sinon": "^3.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.5.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}
