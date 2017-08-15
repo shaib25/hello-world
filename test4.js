@@ -85,7 +85,7 @@ test.it('step 3 - online-serving reccomendation - model=popular_(2)', function()
 		var count = (profile.match(/medium=rec/g) || []).length;
 		//console.log(count);
 		expect(count).to.eql('8');
-		expect(profile).to.contain('medium=rec&amp;model=popular');
+		expect(profile).to.contain('medium=rec&amp;model=popular' || 'medium=rec&amp;model=popular');
 		//console.log(profile);
 	});
 
