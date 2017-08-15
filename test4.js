@@ -83,9 +83,9 @@ test.it('step 3 - online-serving reccomendation - model=popular_(2)', function()
 	driver.findElement(By.css("#vlerecommendations")).getAttribute("outerHTML")
     .then(function(profile) {
 		var count = (profile.match(/medium=rec/g) || []).length;
-		console.log(count);
+		//console.log(count);
 		expect(count).to.eql('8');
-		expect(profile).to.contain('medium=rec&amp;model=popular' || 'medium=rec&amp;model=category');
+		expect(profile).to.contain('medium=rec&amp;model=category' || 'medium=rec&amp;model=popular');
 		//console.log(profile);
 	});
 
