@@ -124,9 +124,9 @@ test.it('step 5 - online-serving reccomendation - model=isr', function() {
 	});
 
 });
-
+/*
 test.after(function () {
     driver.quit();
   });
-  
+*/
 });
