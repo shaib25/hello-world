@@ -25,7 +25,7 @@ test.it('step 1 - Make call to product page', function() {
     driver.findElement(webdriver.By.css("div.ub-emb-iframe-wrapper:nth-child(1) > button:nth-child(1)")).click();
 	driver.sleep(2000);
 	//click on item - Prom Dresses
-	var textPromise = driver.findElement(By.css(".whats-list-box > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)")).getAttribute("href");
+	var textPromise = driver.findElement(By.css(".whats-list-box > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > a:nth-child(1)")).getAttribute("href");
 
 textPromise.then(function(text) {
   if (text === "http://www.newyorkdress.com/Prom_Dresses.html") {
@@ -39,7 +39,7 @@ textPromise.then(function(text) {
     process.exit(1);
   }
 });
-	driver.findElement(webdriver.By.css(".whats-list-box > ul:nth-child(1) > li:nth-child(3) > a:nth-child(1)")).click();
+	driver.findElement(webdriver.By.css(".whats-list-box > ul:nth-child(1) > li:nth-child(3) > div:nth-child(1) > a:nth-child(1)")).click();
 	driver.sleep(3000);
     driver.wait(until.titleContains('Prom Dresses'), 1000);
     driver.sleep(2000);
